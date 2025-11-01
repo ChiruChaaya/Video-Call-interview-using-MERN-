@@ -5,7 +5,7 @@ import {Env} from "./lib/env.js";
 const app = express();
 
 console.log(Env.PORT);
-app.get("/health", (req, res) => {
+app.get("/healthy", (req, res) => {
     res.status(200).json({msg:"Server is in health"});
 });
 
