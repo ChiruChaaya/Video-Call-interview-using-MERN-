@@ -9,6 +9,6 @@ app.get("/healthy", (req, res) => {
     res.status(200).json({msg:"Server is in health"});
 });
 
-app.listen(Env.PORT, () => {
+app.listen(3000, () => {
     console.log("Server is running on port",Env.PORT);
 });
